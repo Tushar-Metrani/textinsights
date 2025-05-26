@@ -1,0 +1,63 @@
+/* .App {
+  text-align: center;
+}
+
+
+.navbar {
+  border-bottom: 2px solid #f8f9fa;
+}
+
+textarea {
+  resize: none;
+}
+
+.card{
+  width: 22rem;
+}
+
+.list-group-item{
+  background-color: whitesmoke;
+} 
+  
+*/
+
+body{
+  background-color: antiquewhite;
+}
+
+.theme-toggle-btn{
+  border: none;
+  width: 35px;
+  height: 35px;
+}
+
+.theme-toggle-btn .disable{
+  display: none;
+}
+
+.dropdown{
+  display: none;
+}
+
+textarea{
+  min-height: 100px !important;
+}
+
+@media (max-width:460px) {
+  .form-check-label{
+    display: none;
+  }  
+}
+
+footer{
+  position: relative;
+  bottom: 0px;
+  margin-top: 30px;
+  padding: 10px;
+}
+
+footer a{
+  padding: 0px 10px;
+}
+
+
