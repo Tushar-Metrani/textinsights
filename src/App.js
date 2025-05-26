@@ -16,7 +16,7 @@ const Style1 ={
 
 const Style2= {
   color:"#212529",
-  backgroundColor:"antiquewhite"
+  backgroundColor:"white"
 }
 function App() {
   const [mode,setMode] = useState('light');
@@ -32,18 +32,18 @@ function App() {
     else{
       setMode("light")
       setTheme(Style2);
-      document.body.style.backgroundColor="antiquewhite";
+      document.body.style.backgroundColor="white";
     }
   }
   return (
     <>
-      <BrowserRouter>
+      <BrowserRouter basename="/textinsights">
       <Navbar title="TextInsights" page1="Home" page2="About us" mode={mode} toggleMode={toggleMode} style={theme}/>
       <Routes>
-        <Route path="/" element={<Navigate to="/home" replace />} />
+        <Route path="/" element={<Navigate to="home" replace />} />
         <Route path="/home" element={<Form heading="Enter Text to Analyze" mode={mode} style={theme}/>} />
         <Route path="/about" element={<About heading="About" mode={mode} style={theme}/>} />
-        <Route path="*" element={<Navigate to="/home" replace />} />
+        <Route path="*" element={<Navigate to="home" replace />} />
       </Routes>
       <Footer/>
     </BrowserRouter>
