@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/textinsights/static/css/main.7ea54484.css",
+    "main.js": "/textinsights/static/js/main.8fe487fc.js",
+    "static/js/453.2dd0dd5d.chunk.js": "/textinsights/static/js/453.2dd0dd5d.chunk.js",
+    "index.html": "/textinsights/index.html",
+    "main.7ea54484.css.map": "/textinsights/static/css/main.7ea54484.css.map",
+    "main.8fe487fc.js.map": "/textinsights/static/js/main.8fe487fc.js.map",
+    "453.2dd0dd5d.chunk.js.map": "/textinsights/static/js/453.2dd0dd5d.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.7ea54484.css",
+    "static/js/main.8fe487fc.js"
+  ]
+}
