@@ -15,10 +15,10 @@ export default function Navbar(props) {
         <div className="collapse navbar-collapse" id="navbarSupportedContent">
           <ul className="navbar-nav me-auto mb-lg-0">
             <li className="nav-item">
-              <NavLink className={({isActive}) => isActive ?"nav-link active":"nav-link"} aria-current="page" to="/home">{props.page1}</NavLink>
+              <NavLink className={({isActive}) => `${isActive ?"nav-link active":"nav-link"} sm-text`} aria-current="page" to="/home">{props.page1}</NavLink>
             </li>
             <li className="nav-item">
-              <NavLink className={({isActive})=> isActive?"nav-link active":"nav-link"} to="/about">{props.page2}</NavLink>
+              <NavLink className={({isActive})=> `${isActive?"nav-link active":"nav-link"} sm-text`} to="/about">{props.page2}</NavLink>
             </li>
             <li className="nav-item dropdown">
               <a className="nav-link dropdown-toggle" href="/" role="button" data-bs-toggle="dropdown" aria-expanded="false">

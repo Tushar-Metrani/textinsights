@@ -1,26 +1,3 @@
-/* .App {
-  text-align: center;
-}
-
-
-.navbar {
-  border-bottom: 2px solid #f8f9fa;
-}
-
-textarea {
-  resize: none;
-}
-
-.card{
-  width: 22rem;
-}
-
-.list-group-item{
-  background-color: whitesmoke;
-} 
-  
-*/
-
 body{
   background-color: white;
 }
@@ -47,6 +24,15 @@ textarea{
   .form-check-label{
     display: none;
   }  
+}
+
+@media(max-width:356px){
+  .sm-text{
+    font-size: 13px;
+  }
+  .form-switch{
+    padding: 0px;
+  }
 }
 
 footer{
