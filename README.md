@@ -39,19 +39,19 @@ To run the project locally:
 bash
 # 1. Clone the repository
 
-git clone https://github.com/Tushar-Metrani/textinsights.git
+`git clone https://github.com/Tushar-Metrani/textinsights.git`
 
 # 2. Navigate into the project folder
 
-cd textinsights
+`cd textinsights`
 
 # 3. Install dependencies
 
-npm install
+`npm install`
 
 # 4. Start the development server
 
-npm start
+`npm start`
 
 
 Visit `http://localhost:3000` (or the port your app runs on) in your browser.
