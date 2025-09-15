@@ -37,19 +37,19 @@ It allows users to analyze and manipulate their text with features like **word a
 To run the project locally:
 
 bash
-# 1. Clone the repository
+### 1. Clone the repository
 
 `git clone https://github.com/Tushar-Metrani/textinsights.git`
 
-# 2. Navigate into the project folder
+### 2. Navigate into the project folder
 
 `cd textinsights`
 
-# 3. Install dependencies
+### 3. Install dependencies
 
 `npm install`
 
-# 4. Start the development server
+### 4. Start the development server
 
 `npm start`
 
