@@ -9,7 +9,7 @@ export default function About(props) {
                 <p style={props.style}>
                     Welcome to TextInsights, your go-to online text utility tool designed to make your writing clearer, sharper, and more effective.
 
-                    Whether you're a student, writer, professional, or content creator, our tool provides instant feedback on your text. Simply paste your content, and we’ll give you valuable insights — including:
+                    Whether you're a student, writer, professional, or content creator, our tool provides instant feedback on your text. Simply paste your content, and we'll give you valuable insights — including:
 
                 </p>
 
