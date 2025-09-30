@@ -1,37 +1,30 @@
-import React, { useState } from "react";
+import { useState } from "react";
 
 import axios from 'axios';
-let toneList;
+
 let updateFlag=0;
-// eslint-disable-next-line
-async function run(text) {
-    try {
-        const response = await axios.post(
-            'https://api.sapling.ai/api/v1/tone',
-            {
-                key: 'PJ5FU4Y03S4U0KLAQXL0JJROOJ1MO4YM',
-                text,
-            },
-        );
-        // eslint-disable-next-line
-        const { status, data } = response;
-        //console.log({status});
-        //console.log(JSON.stringify(data, null, 4));
-        toneList = data.overall;
-        //console.log(toneList[0][1]);
-    } catch (err) {
-        const { msg } = err.response.data;
-        console.log({ err: msg });
-    }
-    return toneList[0][1];
-}
-
-
 let prevtext;
 
 export default function Form(props) {
-    let sentence, words, chars, schars, readTime, tone, readingLevel;
+    let sentence, words, chars, schars, readTime, readingLevel;
     const [text, setText] = useState("");
+    const [tone,setTone] = useState("None");
+
+    const run = async () => {
+        setTone("fetching....")
+        try {
+        const response = await axios.get(
+            'http://127.0.0.1:8000/get-tone',{params:{text:text}},
+        );
+
+        const {emotion, emoji} = response.data;
+        
+        setTone(`${emotion} ${emoji}`);
+        } 
+        catch (err) {
+            setTone("Tone detection not working");
+        }
+    }
 
     //eslint-disable-next-line
     const [property, setProperty] = useState({
@@ -40,7 +33,6 @@ export default function Form(props) {
         schars: 0,
         chars: 0,
         readTime: 0,
-        tone: "None!",
         readingLevel: "None!"
     });
 
@@ -94,11 +86,11 @@ export default function Form(props) {
 
     const analyzeText = () => {
         sentence = sentence = text !== "" ? (text.trim().split(/[.!?]+/).filter(s => s.trim().length > 0).length) : 0;
-        words = text !== "" ? (text.match(/\b[\w’'-]+\b/g) || []).length : 0;
+        words = text !== "" ? (text.match(/\b[\w''-]+\b/g) || []).length : 0;
         schars = text.length;
         chars = text.replace(/\s/g, '').length;
         readTime = formatReadTime(words / 200);
-        tone = run(text);
+        run();
         readingLevel = calculateReadingLevel(text);
         setProperty({
             sentence: sentence,
@@ -106,7 +98,6 @@ export default function Form(props) {
             schars: schars,
             chars: chars,
             readTime: readTime,
-            tone: tone,
             readingLevel: readingLevel
         })
         updateFlag=0;
@@ -196,7 +187,7 @@ export default function Form(props) {
 
                 <p><b>{property.readTime}</b> read time</p>
 
-                <p><b>Tone: </b>{property.tone}</p>
+                <p><b>Tone: </b>{tone}</p>
                 <p><b>Reading Level: </b>{property.readingLevel}</p>
             </div>
 
