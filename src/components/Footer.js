@@ -12,7 +12,7 @@ export default function Footer() {
                         <a href="https://github.com/Tushar-Metrani" target="_blank" rel="noopener noreferrer" aria-label="GitHub Profile">
 
                             <svg height="24" viewBox="0 0 16 16" width="24" aria-hidden="true" fill="#fff">
-                            <path fill-rule="evenodd"
+                            <path fillRule="evenodd"
                                     d="M8 0C3.58 0 0 3.58 0 8a8.01 8.01 0 005.47 7.59c.4.07.55-.17.55-.38
                               0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13
                               -.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66

@@ -14,7 +14,7 @@ export default function Form(props) {
         setTone("fetching....")
         try {
         const response = await axios.get(
-            'http://127.0.0.1:8000/get-tone',{params:{text:text}},
+            'https://table-booking-eiag.onrender.com/get-tone',{params:{text:text}},
         );
 
         const {emotion, emoji} = response.data;
