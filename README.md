@@ -4,6 +4,8 @@
 It allows users to analyze and manipulate their text with features like **word and character counting**, **case conversion**, **tone detection**, **Reading Level Detection** — all in a responsive and modern UI.
 
 ---
+- ⚠️ Note - tone detection may take some time as the render server might be waking from sleep mode.
+---
 
 ## 🚀 Features
 
@@ -33,6 +35,8 @@ It allows users to analyze and manipulate their text with features like **word a
 ---
 
 ## 📦 Installation & Setup
+
+- ⚠️ Note - The tone detection will not work locally
 
 To run the project locally:
 

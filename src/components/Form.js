@@ -11,7 +11,7 @@ export default function Form(props) {
     const [tone,setTone] = useState("None");
 
     const run = async () => {
-        setTone("fetching....")
+        setTone("fetching... this may take a moment as the render server might be waking from sleep mode.")
         try {
         const response = await axios.get(
             'https://table-booking-eiag.onrender.com/get-tone',{params:{text:text}},
