@@ -4,16 +4,16 @@ import React from "react";
 export default function About(props) {
     return (
         <>
-            <div className="container my-4 mx-auto" style={props.style} data-bs-theme={props.mode} >
+            <div className="container my-4 mx-auto">
                 <h2 className="my-3">{props.heading}</h2>
-                <p style={props.style}>
+                <p>
                     Welcome to TextInsights, your go-to online text utility tool designed to make your writing clearer, sharper, and more effective.
 
                     Whether you're a student, writer, professional, or content creator, our tool provides instant feedback on your text. Simply paste your content, and we'll give you valuable insights — including:
 
                 </p>
 
-                <div className="card" style={props.style}>
+                <div className="card" style={{maxWidth:"400px"}}>
                     <ul className="list-group list-group-flush">
                         <li className="list-group-item"><b>Sentence Count </b> 
                         - No. of sentences</li>

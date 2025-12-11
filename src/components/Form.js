@@ -152,14 +152,14 @@ export default function Form(props) {
 
     return (
         <>
-            <div className="container my-4" style={props.style} data-bs-theme={props.mode} >
+            <div className="container my-4">
                 <h2 className="my-3">{props.heading}</h2>
                 <div className="mb-3">
-                    <textarea className="form-control" id="exampleFormControlTextarea1" rows="8" value={text} onChange={update} placeholder="Enter Text Here"></textarea>
+                    <textarea className="form-control mb-1" id="exampleFormControlTextarea1" rows="8" value={text} onChange={update} placeholder="Enter Text Here"></textarea>
 
-                    <button className="btn btn-primary my-2 mx-2" onClick={clearText}>Clear</button>
+                    <button className="btn btn-danger my-2 mx-2" onClick={clearText}>Clear</button>
 
-                    <button className="btn btn-primary my-2 mx-2" onClick={copyText}>Copy</button>
+                    <button className="btn btn-success my-2 mx-2" onClick={copyText}>Copy</button>
 
                     <button className="btn btn-primary my-2 mx-2" onClick={cleanText}>Clean Text</button>
 
@@ -171,12 +171,12 @@ export default function Form(props) {
 
                     <button className="btn btn-primary my-2 mx-2" onClick={toSentenceCase}>SentenceCase</button>
 
-                    <button className={`btn btn-success my-2 mx-2 ${text.length>0?"":"disabled"}`} onClick={analyzeText}>Analyze Text</button>
+                    <button className={`btn btn-warning my-2 mx-2 ${text.length>0?"":"disabled"}`} onClick={analyzeText}>Analyze Text</button>
 
                 </div>
             </div>
 
-            <div className="container my-3" style={props.style}>
+            <div className="container my-3">
                 <h2>Text analysis </h2><p>{updateFlag===1?"(Update Needed)":""}</p>
                 <p>
                     <b>{property.sentence}</b> {property.sentence > 1 ? "sentences" : "sentence"} <br />

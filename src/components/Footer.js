@@ -1,15 +1,15 @@
-import React from "react";
 
 export default function Footer() {
     return (
         <>
-            <footer className="bg-primary text-center text-white px-2">
+            <footer className="bg-primary text-center text-white px-2 py-2 mt-5 position-relative bottom-0 ">
 
-                <div className="text-center px-2">
+                <div className="text-center px-2 d-flex justify-content-center align-items-center">
                     <p className="mx-0 my-0">
                         Copyright © 2025 TextInsights
+                    </p>
 
-                        <a href="https://github.com/Tushar-Metrani" target="_blank" rel="noopener noreferrer" aria-label="GitHub Profile">
+                    <a href="https://github.com/Tushar-Metrani" target="_blank" rel="noopener noreferrer" aria-label="GitHub Profile" className="ps-2">
 
                             <svg height="24" viewBox="0 0 16 16" width="24" aria-hidden="true" fill="#fff">
                             <path fillRule="evenodd"
@@ -27,8 +27,6 @@ export default function Footer() {
                             
                             </svg>
                         </a>
-
-                    </p>
                 </div>
 
             </footer>

@@ -1,7 +1,7 @@
 # 📝 TextInsights
 
 **TextInsights** is a web-based text utility tool built with **React.js** and **Bootstrap 5**.  
-It allows users to analyze and manipulate their text with features like **word and character counting**, **case conversion**, **tone detection**, **Reading Level Detection** — all in a responsive and modern UI.
+It allows users to analyze and manipulate their text with features like **Word and Character Counting**, **Case Conversion**, **Tone Detection**, **Reading Level Detection** — all in a responsive and modern UI.
 
 ---
 - ⚠️ Note - tone detection may take some time as the render server might be waking from sleep mode.
