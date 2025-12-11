@@ -1,11 +1,9 @@
-import React from "react";
 
-
-export default function About(props) {
+export default function About() {
     return (
         <>
             <div className="container my-4 mx-auto">
-                <h2 className="my-3">{props.heading}</h2>
+                <h2 className="my-3">About</h2>
                 <p>
                     Welcome to TextInsights, your go-to online text utility tool designed to make your writing clearer, sharper, and more effective.
 

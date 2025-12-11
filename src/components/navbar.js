@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { NavLink } from "react-router";
-export default function Navbar(props) {
+export default function Navbar() {
 
   const [theme, setTheme] = useState(() => {
     try {
@@ -26,16 +26,16 @@ export default function Navbar(props) {
 
       <div className="container-fluid">
 
-        <NavLink className="navbar-brand fs-5" to="/home">{props.title}</NavLink>
+        <NavLink className="navbar-brand fs-5" to="/home">TextInsights</NavLink>
 
 
         <div className="collapse navbar-collapse" id="navbarSupportedContent">
           <ul className="navbar-nav me-auto mb-lg-0">
             <li className="nav-item">
-              <NavLink className={({ isActive }) => `${isActive ? "nav-link active" : "nav-link"} sm-text`} aria-current="page" to="/home">{props.page1}</NavLink>
+              <NavLink className={({ isActive }) => `${isActive ? "nav-link active" : "nav-link"} sm-text`} aria-current="page" to="/home">Home</NavLink>
             </li>
             <li className="nav-item">
-              <NavLink className={({ isActive }) => `${isActive ? "nav-link active" : "nav-link"} sm-text`} to="/about">{props.page2}</NavLink>
+              <NavLink className={({ isActive }) => `${isActive ? "nav-link active" : "nav-link"} sm-text`} to="/about">About</NavLink>
             </li>
           </ul>
 

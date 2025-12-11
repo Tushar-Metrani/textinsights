@@ -5,7 +5,7 @@ import axios from 'axios';
 let updateFlag=0;
 let prevtext;
 
-export default function Form(props) {
+export default function Form() {
     let sentence, words, chars, schars, readTime, readingLevel;
     const [text, setText] = useState("");
     const [tone,setTone] = useState("None");
@@ -26,7 +26,6 @@ export default function Form(props) {
         }
     }
 
-    //eslint-disable-next-line
     const [property, setProperty] = useState({
         sentence: 0,
         words: 0,
@@ -82,8 +81,6 @@ export default function Form(props) {
         }
     }
 
-
-
     const analyzeText = () => {
         sentence = sentence = text !== "" ? (text.trim().split(/[.!?]+/).filter(s => s.trim().length > 0).length) : 0;
         words = text !== "" ? (text.match(/\b[\w''-]+\b/g) || []).length : 0;
@@ -109,12 +106,6 @@ export default function Form(props) {
 
     const clearText = () => {
         setText('');
-    }
-    //eslint-disable-next-line
-    const undoText = () => {
-        if (text !== "") {
-            setText(prevtext);
-        }
     }
 
     const capitalize = () => {
@@ -153,7 +144,7 @@ export default function Form(props) {
     return (
         <>
             <div className="container my-4">
-                <h2 className="my-3">{props.heading}</h2>
+                <h2 className="my-3">Enter Text to Analyze</h2>
                 <div className="mb-3">
                     <textarea className="form-control mb-1" id="exampleFormControlTextarea1" rows="8" value={text} onChange={update} placeholder="Enter Text Here"></textarea>
 
