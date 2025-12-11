@@ -70,10 +70,10 @@ Visit `http://localhost:3000` (or the port your app runs on) in your browser.
 ## 📸 Screenshots
 
 ### 🌗 Dark Mode
-![Dark mode screenshot](screenshots/darkmode.png)
+![Dark mode screenshot](screenshots/darkmode.webp)
 
 ### 📱 Mobile View
-![Mobile view](screenshots/responsive.png)
+![Mobile view](screenshots/responsive.webp)
 
 
 ## 🔗 Live Demo
