@@ -1,12 +1,13 @@
 import { useState } from "react";
-
 import axios from 'axios';
 
+const api_url = "https://table-booking-eiag.onrender.com/get-tone" //"http://127.0.0.1:8000/get-tone" 
 let updateFlag=0;
 let prevtext;
 
 export default function Form() {
     let sentence, words, chars, schars, readTime, readingLevel;
+    
     const [text, setText] = useState("");
     const [tone,setTone] = useState("None");
 
@@ -14,15 +15,16 @@ export default function Form() {
         setTone("fetching... this may take a moment as the render server might be waking from sleep mode.")
         try {
         const response = await axios.get(
-            'https://table-booking-eiag.onrender.com/get-tone',{params:{text:text}},
+            api_url,{params:{text:text}},
         );
 
-        const {emotion, emoji} = response.data;
+        const value = response.data;
         
-        setTone(`${emotion} ${emoji}`);
+        setTone(value);
         } 
         catch (err) {
             setTone("Tone detection not working");
+            console.log(err);
         }
     }
 
