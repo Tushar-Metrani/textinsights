@@ -18,7 +18,7 @@ It allows users to analyze and manipulate their text with features like **Word a
 - 📋 **Copy Text to Clipboard**
 - 🔠 **Count Letters, Words, Characters**
 - ⏱ **Estimate Reading Time**
-- 🧠 **Tone Detection** using [Sapling.ai](https://sapling.ai/)
+- 🧠 **Tone Detection** using [Google Gemini Api](https://ai.google.dev/gemini-api/docs)
 - 📚 **Reading Level Detection**:
   - Classifies text as *Simple*, *General Audience*, *Advanced*, or *Academic*
 - 🌗 **Light/Dark Mode Toggle**
@@ -29,8 +29,7 @@ It allows users to analyze and manipulate their text with features like **Word a
 
 - [React.js](https://reactjs.org/)
 - [Bootstrap 5](https://getbootstrap.com/)
-- [Sapling.ai Tone API](https://sapling.ai/docs/api/tone)
-- JavaScript (ES6+), HTML5, CSS3
+- [Google Gemini API](https://ai.google.dev/gemini-api/docs)
 
 ---
 
